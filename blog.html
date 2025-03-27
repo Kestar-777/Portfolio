@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Chijindu Otuokere - Blog</title>
+    <link rel="stylesheet" href="Emmanuel.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="Emmanuel.html">Emmanuel Otuokere</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="blog">
+        <h2>Blog</h2>
+        <div class="blog-posts">
+            <div class="blog-post">
+                <h3>My First Steps in Web Development</h3>
+                <p class="date">October 26, 2023</p>
+                <img src="images/blog-post1.jpg" alt="Blog Post 1">
+                <p>This week, I started learning HTML and CSS. It's been challenging but also incredibly rewarding to see my first webpage come to life!  I'm excited to continue learning and building more complex projects.</p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div class="blog-post">
+                <h3>Diving into JavaScript</h3>
+                <p class="date">November 15, 2023</p>
+                <img src="images/blog-post2.jpg" alt="Blog Post 2">
+                <p>I've been exploring JavaScript and its potential to add interactivity to websites. I'm experimenting with DOM manipulation and event handling.  There's so much to learn, but I'm enjoying the process!</p>
+                <a href="#">Read More</a>
+            </div>
+             <div class="blog-post">
+                <h3>Learning Python</h3>
+                <p class="date">December 10, 2023</p>
+                <img src="images/blog-post3.jpg" alt="Blog Post 3">
+                <p>I've been exploring Python and its potential to add interactivity to websites. I'm experimenting with DOM manipulation and event handling.  There's so much to learn, but I'm enjoying the process!</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+     <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Emmanuel Chijindu Otuokere</h3>
+                <p class="footer-bio">Full-stack developer specializing in modern web technologies. Building digital solutions that matter.</p>
+            </div>
+    
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact">
+                <h3>Connect</h3>
+                <ul class="social-links">
+                    <li><a href="https://github.com/yourusername" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="mailto:your@email.com"><i class="fas fa-envelope"></i> Email</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Emmanuel Chijindu Otuokere. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.querySelector('.burger');
+            const navLinks = document.querySelector('.nav-links');
+
+            burger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                burger.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Chijindu Otuokere - Portfolio</title>
+    <link rel="stylesheet" href="Emmanuel.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="Emmanuel.html">Emmanuel Otuokere</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="pics/blog.JPEG" alt="Project 1">
+                <h3>Project Name 1</h3>
+                <p>Brief description of the project. Technologies used.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="pics/cart.JPEG" alt="Project 2">
+                <h3>Project Name 2</h3>
+                <p>Brief description of the project. Technologies used.</p>
+                <a href="#">View Project</a>
+            </div>
+            <!-- Add more project cards here -->
+             <div class="project-card">
+                <img src="pics/aff.JPEG" alt="Project 3">
+                <h3>Project Name 3</h3>
+                <p>Brief description of the project. Technologies used.</p>
+                <a href="#">View Project</a>
+            </div>
+             <div class="project-card">
+                <img src="pics/guess.JPEG" alt="Project 4">
+                <h3>Project Name 4</h3>
+                <p>Brief description of the project. Technologies used.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Emmanuel Chijindu Otuokere</h3>
+                <p class="footer-bio">Full-stack developer specializing in modern web technologies. Building digital solutions that matter.</p>
+            </div>
+    
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact">
+                <h3>Connect</h3>
+                <ul class="social-links">
+                    <li><a href="https://github.com/yourusername" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="mailto:your@email.com"><i class="fas fa-envelope"></i> Email</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Emmanuel Chijindu Otuokere. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.querySelector('.burger');
+            const navLinks = document.querySelector('.nav-links');
+
+            burger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                burger.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

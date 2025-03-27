@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Emmanuel Chijindu Otuokere</title>
+    <link rel="stylesheet" href="Emmanuel.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="Emmanuel.html">Emmanuel Otuokere</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about-me">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img class="about-image" src="pics/profile.png" alt="Emmanuel Chijindu Otuokere" >
+            <div class="about-text">
+                <p>Hello! My name is Emmanuel Chijindu Otuokere, and I'm a student with a burning passion for software engineering. I'm currently immersed in learning the fundamentals of programming and web development, eager to build innovative and impactful solutions.</p>
+
+                <p>My journey began with an interest in how software shapes our world.  From mobile apps to complex systems, I'm fascinated by the power of code to solve problems and create new experiences.  I'm dedicated to mastering key technologies like HTML, CSS, JavaScript, and Python, and I'm always seeking opportunities to expand my skillset.</p>
+    
+                <p>I'm driven by a desire to collaborate with other talented individuals and contribute to meaningful projects.  Whether it's developing a website, creating a mobile application, or exploring artificial intelligence, I'm excited to learn, grow, and make a difference in the tech industry.</p> 
+            </div>   
+            </div>
+            <div class="about-section">
+                <h3>Education</h3>
+                <ul>
+                    <li>[Your School Name], [Degree] - Expected Graduation: [Year]</li>
+                </ul>
+            
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <!-- Add more skills here -->
+                </ul>
+            
+                <h3>Interests</h3>
+                <p>Outside of coding, I enjoy [mention hobbies and interests].</p>
+            </div>
+        
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Emmanuel Chijindu Otuokere</h3>
+                <p class="footer-bio">Full-stack developer specializing in modern web technologies. Building digital solutions that matter.</p>
+            </div>
+    
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact">
+                <h3>Connect</h3>
+                <ul class="social-links">
+                    <li><a href="https://github.com/yourusername" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="mailto:your@email.com"><i class="fas fa-envelope"></i> Email</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Emmanuel Chijindu Otuokere. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.querySelector('.burger');
+            const navLinks = document.querySelector('.nav-links');
+
+            burger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                burger.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
