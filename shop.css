@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Navigation Styles */
+.naav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.naav h1 {
+    color: #EF0107;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #EF0107;
+}
+
+.icons {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #EF0107;
+    border-radius: 8px;
+    margin: 2rem 0;
+    padding: 2rem;
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.personal-intro {
+    border-left: 3px solid #EF0107;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.greeting {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.affiliation {
+    font-weight: 600;
+    color: #EF0107;
+    margin-bottom: 1rem;
+}
+
+.mission-statement {
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.arsenal-red {
+    color: #EF0107;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .greeting {
+        font-size: 1.4rem;
+    }
+}
+
+.hero img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+/* Products Grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.product {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-decoration: none;
+    display: block;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.description {
+    padding: 1rem;
+}
+
+.description p {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.description b {
+    color: #EF0107;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .hero-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero-text {
+        text-align: left;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .naav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.link {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.link a {
+    text-decoration: none;
+    color: #EF0107;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.link p {
+    margin-top: 1rem;
+    color: #666;
+}
+
+/* footer */
+footer {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-section h3 {
+    color: #EF0107;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #EF0107;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.social-links a {
+    color: white;
+}
+
+.social-links a:hover {
+    color: #EF0107;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    color: #ddd;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.new-arrive {
+    color: #EF0107;
+}
