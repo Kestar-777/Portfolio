@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    body {
+      margin: 0;
+      padding-top: 60px; /* Adjust based on navbar height */
+    }
+
+    .menu-toggle {
+      padding: 20px;
+      cursor: pointer;
+    }
+
+    .hamburger { display: block; }
+    .close-icon { display: none; }
+
+    .nav-links {
+      display: none;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Show menu when active */
+    .navbar.menu-active .nav-links {
+      display: block;
+    }
+
+    .navbar.menu-active .hamburger {
+      display: none;
+    }
+
+    .navbar.menu-active .close-icon {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span class="hamburger">☰</span>
+      <span class="close-icon">×</span>
+    </div>
+    <ul class="nav-links">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <!-- Page content (for scrolling demo) -->
+  <div style="height: 2000px; padding: 20px;">
+    <h1>Scroll down to test!</h1>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('menu-active');
+    }
+  </script>
+</body>
+</html>

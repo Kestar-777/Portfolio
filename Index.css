@@ -4,6 +4,10 @@
     align-items: center;
     padding: 4rem 2rem;
     background-color: #f0f8ff; /* Light Blue Background */
+    margin-top: 30px;
+}
+.mobile-hr{
+    display: none;
 }
 
 .hero-content {
@@ -44,8 +48,7 @@
 }
 
 .hero-image img {
-    border-radius:50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 /* Skills Section */
@@ -71,6 +74,7 @@
 .skill {
     text-align: center;
     width: 150px;
+    margin-left: 60px;
 }
 
 .skill img {
@@ -84,6 +88,7 @@
 .skill p {
     font-weight: 500;
     color: #495057;
+    margin-right: 70px;
 }
 
 /* Featured Projects Section */
@@ -157,4 +162,33 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-right: 0;
+    }
+
+    .hero-image {
+        margin-top: 2rem;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile-hr{
+        margin-top: -30px;
+        display: none;
+        display: block;
+    }
+    .skills{
+        align-items: center;
+        justify-content: center;
+    }
 }
